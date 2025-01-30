@@ -1,0 +1,261 @@
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: antiquewhite;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(90deg, #1e3c72, #2a5298);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-weight: 600;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.3s;
+}
+
+section {
+  padding: 30px;
+  margin: 30px auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+}
+
+h2 {
+  border-bottom: 3px solid #1e3c72;
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+/* About Me & Skills Container */
+.about-container {
+  display: flex;
+  gap: 20px; /* Space between the two sections */
+  margin-top: 20px;
+}
+
+/* About Me Section (Left Side) */
+.about-me {
+  flex: 1; /* Takes up 50% of the container */
+  padding: 20px;
+  background: #f0f4f8;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-style: italic; /* Elegant and modern font */
+  font-size: 1.1rem; /* Slightly larger font size for readability */
+  font-weight: lighter; /* Regular weight for normal text */
+  line-height: 1.6; /* Improved line spacing for better readability */
+  color: #333; /* Dark color for the text to ensure legibility */
+  letter-spacing: 0.5px; /* A bit of spacing for a clean look */
+}
+
+/* Skills Section (Right Side) */
+.skills {
+  font-style: italic; /* Elegant and modern font */
+  font-size: 1.1rem; /* Slightly larger font size for readability */
+  font-weight: lighter; /* Regular weight for normal text */
+  flex: 1; /* Takes up 50% of the container */
+  padding: 20px;
+  background: #f0f4f8;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.skills h3 {
+  margin-top: 0;
+  color: #1e3c72;
+  font-weight: 600;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills ul li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* Projects Section */
+#projects h2 {
+  border-bottom: none; /* Remove underline from the section title */
+}
+
+.projects-container {
+  display: flex;
+  gap: 20px; /* Space between the flip cards */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  justify-content: center;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 800px;
+  height: 400px;
+  perspective: 1000px;
+  margin: 20px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.flip-card-front {
+  background-color: #fff;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flip-card-front img {
+  width: 80%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.flip-card-back {
+  background-color: azure;
+  color: black;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flip-card-back h4 {
+  margin: 10px 0;
+}
+
+.flip-card-back ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.flip-card-back ul li {
+  margin: 5px 0;
+}
+
+.job {
+  font-style: italic;
+  font-weight: lighter;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #eef1f5;
+  border-left: 5px solid brown;
+  border-radius: 8px;
+}
+
+.job h3 {
+  color: #bd4e73;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+/* Education Section Styling */
+.education-section {
+  padding: 20px;
+  background-color: #f8f9fa;
+  width: 80%;
+  margin: 30px auto; /* Ensures it's centered */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.education-section h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  color: #333;
+  text-align: left;
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.degree {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.degree h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  color: #bd4e73;
+}
+
+.degree p {
+  font-family: "Arial", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.degree span {
+  font-weight: bold;
+  color: #bd4e73;
+}
+
+.degree p strong {
+  font-weight: 600;
+}
+
+footer {
+  text-align: center;
+  padding: 15px 0;
+  background: #1e3c72;
+  color: white;
+  margin-top: 30px;
+  font-weight: 400;
+}
